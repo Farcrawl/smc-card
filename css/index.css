@@ -247,3 +247,9 @@
 	.dl-button::hover {
 		background-color:#fffff;
 	}
+
+	.footer-smc{
+		   position:absolute;
+ 		  bottom:0;
+ 		  width:100%;
+	}
