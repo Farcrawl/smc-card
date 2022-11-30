@@ -2,8 +2,6 @@
 
 // code reference: https://stackoverflow.com/questions/31656689/how-to-save-img-to-users-local-computer-using-html2canvas
 
-var browser = require("webextension-polyfill");
-
 setUpDownloadPageAsImage();
 
 function setUpDownloadPageAsImage() {
