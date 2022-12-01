@@ -1,22 +1,15 @@
 /**
- * Function to rescale image
+ * Slider Function to rescale image 
  */
-function zoomIn(){
-	
-	
-	var img=document.getElementById("display-image");
-	img.style.backgroundSize= 250 + "px" ; 
+
+var img="img"
+let slider = document.getElementById("img-slider");
+
+var elems = document.getElementById("display-image");
+for (var i = 0; i < elems.length; i++) {
+    elems[i].style.backgroundSize = "100px";
 }
 
-function zoomEqual(){
-	
-	
-	var img=document.getElementById("display-image");
-	img.style.backgroundSize= 170 + "px" ; 
-}
-
-function zoomOut(){
-	
-	var img=document.getElementById("display-image");
-	img.style.backgroundSize= 130 + "px" ; 	
-}
+slider.addEventListener('input', e => {
+  elems.style.backgroundSize = e.target.value + 'px'
+})
